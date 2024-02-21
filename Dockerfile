@@ -2,8 +2,7 @@
 FROM caddy:2-builder-alpine AS builder
 
 RUN xcaddy build \
-    --with github.com/caddyserver/nginx-adapter \
-    --with https://github.com/caddy-dns/netcup@v0.1.0
+    --with github.com/caddy-dns/netcup@v0.1.0
 
 FROM caddy:2-alpine
 
