@@ -2,7 +2,7 @@
 FROM caddy:2-builder-alpine AS builder
 
 RUN xcaddy build \
-    --with github.com/caddy-dns/netcup@v0.1.1
+    --with github.com/caddy-dns/netcup@v1.0.0
 
 FROM caddy:2-alpine
 
